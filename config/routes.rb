@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   post'todolists'=>'todolists#create'
   get'todolists'=>'todolists#index'
 
+  # .../todolists/1や.../todolists/3に該当
+  get'todolists/:id'=>'todolists#show',as:'todolist'
+
 end
